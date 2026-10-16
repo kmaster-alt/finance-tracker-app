@@ -3,7 +3,7 @@ export function compileRegex(input, flags = '') {
     catch { return null; }
 }
 
-export function highligh(text, re) {
+export function highlight(text, re) {
     if (!re) return text;
     return text.replace(re, m => `<mark>${m}</mark>`);
 }

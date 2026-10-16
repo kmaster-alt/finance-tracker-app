@@ -9,12 +9,12 @@ function notify() { subscribers.forEach(fn => fn(records)); save(records); }
 
 export function addRecord(data) {
     const now = new Date().toISOString();
-    records.push({ id: 'txn_' + Date.now(), ...data, amount: parseFloat(data.amounut), createdAt: now, updatedAt: now });
+    records.push({ id: 'txn_' + Date.now(), ...data, amount: parseFloat(data.amount), createdAt: now, updatedAt: now });
     notify();
 }
 
-export function aupdateRecord(id, data) {
-    records = records.map(r => r.id === id ? { ...r, ...data, amount: parseFloat(data.amount), updateAt: new Date().toISOString() } : r);
+export function updateRecord(id, data) {
+    records = records.map(r => r.id === id ? { ...r, ...data, amount: parseFloat(data.amount), updatedAt: new Date().toISOString() } : r);
     notify();
 }
 
