@@ -27,11 +27,11 @@
 <section id="about" aria-labelledby="about-h">
     <h2 id="about-h">About</h2>
     <p>Track spending, categorize it, and search transactions with regex.</p>
-    <p>Contact: <a href="https://github.con/kmaster-alt">GitHub</a> . k.master@alustudent.com</p>
+    <p>Contact: <a href="https://github.com/kmaster-alt">GitHub</a> . k.master@alustudent.com</p>
 </section>
 
    <section id="dashboard" aria-labelledby="dash-h">
-      <h2 id="dash h">Dashboard</h2>
+      <h2 id="dash-h">Dashboard</h2>
       <div class="stats-grid" id="statsGrid"></div>
       <p id="capStatus" role="status" aria-live="polite"></p>
       <div id="trendChart" class="trend-chart" aria-label="Spending in the last 7 days"></div>
@@ -59,13 +59,13 @@
     </section>
 
     <section id="form" aria-labelledby="form-h">
-        <h2 id="form-h">add / Edit Transaction</h2>
+        <h2 id="form-h">Add / Edit Transaction</h2>
         <form id="recordForm" novalidate>
             <input type="hidden" id="recordId">
             <div class="field">
-                <label for="decription">Description</label>
+                <label for="description">Description</label>
                 <input type="text" id="description" required>
-                <span class="error" id="descriptionError" role="status" aria-love="polite"></span>
+                <span class="error" id="descriptionError" role="status" aria-live="polite"></span>
             </div>
             <div class="field">
                 <label for="amount">Amount</label>
@@ -76,16 +76,16 @@
                 <label for="category">Category</label>
                 <select id="category">
                     <option>Food</option><option>Books</option><option>Transport</option>
-                    <option>Entertainment</option><option>Fees</option><opition>Other</opition>
+                    <option>Entertainment</option><option>Fees</option><option>Other</option>
                 </select>
                 <span class="error" id="categoryError" role="status" aria-live="polite"></span>
             </div>
             <div class="field">
-                <label for="date">DATE</label>
+                <label for="date">Date</label>
                 <input type="text" id="date" placeholder="YYYY-MM-DD" required>
                 <span class="error" id="dateError" role="status" aria-live="polite"></span>
             </div>
-            <button type="submit">save</button>
+            <button type="submit">Save</button>
         </form>
     </section>
 
@@ -110,7 +110,7 @@
 </main>
 
 <footer>
-    <p>Built for the responsive UI assignment.</p>
+    <p>Built for the Responsive UI assignment.</p>
 </footer>
 
 <script type="module" src="scripts/app.js"></script>
