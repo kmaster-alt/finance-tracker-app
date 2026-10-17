@@ -1,4 +1,4 @@
-:root { --bg:#f7f7fb; --text:#1a1a1a; --accent:#3557d6; --danger:#c0392b; card:#fff; }
+:root { --bg:#f7f7fb; --text:#1a1a1a; --accent:#3557d6; --danger:#c0392b; --card:#fff; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
 .skip-link { position:absolute; left:-999px; top:0; background:var(--accent); color:#fff; padding:8px; }
